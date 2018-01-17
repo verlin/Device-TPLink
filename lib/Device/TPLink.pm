@@ -34,7 +34,7 @@ None. Check out the "See Also" section for the modules in this package that you 
 
 Verlin Henderson, C<< <verlin at gmail.com> >>
 
-=head1 BUGS
+=head1 BUGS / SUPPORT
 
 To report any bugs or feature requests, please use the github issue tracker: L<https://github.com/verlin/Device-TPLink/issues>
 

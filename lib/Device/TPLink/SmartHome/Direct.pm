@@ -130,44 +130,9 @@ sub decrypt {
 
 Verlin Henderson, C<< <verlin at gmail.com> >>
 
-=head1 BUGS
+=head1 BUGS / SUPPORT
 
-Please report any bugs or feature requests to C<bug-device-tplink at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Device-TPLink>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Device::TPLink::SmartHome::Direct
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker (report bugs here)
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Device-TPLink>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Device-TPLink>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Device-TPLink>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Device-TPLink/>
-
-=back
-
+To report any bugs or feature requests, please use the github issue tracker: L<https://github.com/verlin/Device-TPLink/issues>
 
 =head1 ACKNOWLEDGEMENTS
 

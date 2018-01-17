@@ -31,7 +31,7 @@ has 'token' => (
 
 =head1 NAME
 
-Device::TPLink::Kasa - The great new Device::TPLink::Kasa!
+Device::TPLink::Kasa - Interact with TP-Link's Kasa cloud service API
 
 =head1 VERSION
 
@@ -44,18 +44,25 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
+A small collection of helper methods to make working with Device::TPLink::SmartHome::Kasa easier.
 
     use Device::TPLink::Kasa;
 
-    my $foo = Device::TPLink::Kasa->new();
-    ...
+    my $kasa = Device::TPLink::Kasa->new(
+        username => 'username', # username for Kasa cloud service
+        password => 'password', # password for Kasa cloud service
+        uuid => 'uuid', # Optional, v4 UUID. Will be auto generated if not set
+    );
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 resetToken
+
+Get a new token from the Kasa service
+    
+    $kasa->resetToken();
+
+    my $token = $kasa->token;
 
 =cut
 
@@ -109,7 +116,13 @@ sub resetToken {
   return 1;
 }
 
-=head2 function2
+=head2 getDevices
+
+Returns an array of Device::TPLink::SmartHome::Kasa objects representing all devices associated with this account.
+
+    use Device::TPLink::SmartHome::Kasa;
+
+    my @devices = $kasa->getDevices();
 
 =cut
 
@@ -152,44 +165,9 @@ sub getDevices {
 
 Verlin Henderson, C<< <verlin at gmail.com> >>
 
-=head1 BUGS
+=head1 BUGS / SUPPORT
 
-Please report any bugs or feature requests to C<bug-device-tplink at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Device-TPLink>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Device::TPLink::Kasa
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker (report bugs here)
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Device-TPLink>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Device-TPLink>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Device-TPLink>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Device-TPLink/>
-
-=back
-
+To report any bugs or feature requests, please use the github issue tracker: L<https://github.com/verlin/Device-TPLink/issues>
 
 =head1 ACKNOWLEDGEMENTS
 

@@ -13,7 +13,7 @@ has token => (
 
 =head1 NAME
 
-Device::TPLink::SmartHome::Kasa - The great new Device::TPLink::SmartHome::Kasa!
+Device::TPLink::SmartHome::Kasa - Use Perl to control TP-Link Smart Home devices using the Kasa cloud service
 
 =head1 VERSION
 
@@ -26,7 +26,7 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+.
 
 Perhaps a little code snippet.
 
@@ -35,14 +35,13 @@ Perhaps a little code snippet.
     my $foo = Device::TPLink::SmartHome::Kasa->new();
     ...
 
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
-
 =head1 SUBROUTINES/METHODS
 
 =head2 passthrough
+
+Passes an arbitrary object to the device after converting it to JSON and wrapping it in a Kasa request. Used internally to package commands and send them to the device.
+
+    $HS100-> = Device::TPLink::SmartHome::Kasa->new();
 
 =cut
 
@@ -88,44 +87,9 @@ around [qw(on off getSystemInfo reboot)] => sub { # Pass the command to the devi
 
 Verlin Henderson, C<< <verlin at gmail.com> >>
 
-=head1 BUGS
+=head1 BUGS / SUPPORT
 
-Please report any bugs or feature requests to C<bug-device-tplink at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Device-TPLink>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Device::TPLink::SmartHome::Kasa
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker (report bugs here)
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Device-TPLink>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Device-TPLink>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Device-TPLink>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Device-TPLink/>
-
-=back
-
+To report any bugs or feature requests, please use the github issue tracker: L<https://github.com/verlin/Device-TPLink/issues>
 
 =head1 ACKNOWLEDGEMENTS
 
