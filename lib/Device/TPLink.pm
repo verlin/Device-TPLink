@@ -1,6 +1,6 @@
 package Device::TPLink;
 
-use 5.006;
+use 5.008003;
 use strict;
 use warnings;
 
@@ -21,11 +21,6 @@ our $VERSION = '0.01';
 
 This module does nothing by itself. Use the other modules in the package to control your TP-Link device either directly over TCP or using the Kasa cloud service.
 
-    use Device::TPLink;
-
-    my $foo = Device::TPLink->new();
-    ...
-
 =head1 SUBROUTINES/METHODS
 
 None. Check out the "See Also" section for the modules in this package that you should be using instead of this one.
@@ -37,7 +32,6 @@ Verlin Henderson, C<< <verlin at gmail.com> >>
 =head1 BUGS / SUPPORT
 
 To report any bugs or feature requests, please use the github issue tracker: L<https://github.com/verlin/Device-TPLink/issues>
-
 
 =head1 ACKNOWLEDGEMENTS
 

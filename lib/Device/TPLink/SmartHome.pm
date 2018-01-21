@@ -1,6 +1,6 @@
 package Device::TPLink::SmartHome;
 
-use 5.006; # Should I kill this, given that Moose needs 5.8.3 or greater?
+use 5.008003;
 use Moose;
 use Carp;
 use JSON;
@@ -97,18 +97,11 @@ has 'deviceHwVer' => ( #"1.0"
 
 You're probably in the wrong place. This module is extended by Device::TPLink::SmartHome::Kasa and Device::TPLink::SmartHome::Direct to communicate with smart home devices and issue commands.
 
-Perhaps a little code snippet.
-
-    use Device::TPLink::SmartHome;
-
-    my $foo = Device::TPLink::SmartHome->new();
-    ...
-
 =head1 SUBROUTINES/METHODS
 
 =head2 on
 
-Turns the device on
+Turns the device on.
 
 =cut
 
@@ -119,6 +112,7 @@ sub on { # Turn on or off the light...
 
 =head2 off
 
+Turns the device off.
 =cut
 
 sub off {

@@ -1,6 +1,6 @@
 package Device::TPLink::SmartHome::Kasa;
 
-use 5.006;
+use 5.008003;
 use Moose;
 use LWP::JSON::Tiny;
 
@@ -26,14 +26,7 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-.
-
-Perhaps a little code snippet.
-
-    use Device::TPLink::SmartHome::Kasa;
-
-    my $foo = Device::TPLink::SmartHome::Kasa->new();
-    ...
+Interacts with TP-Link smart home devices using the Kasa cloud service.
 
 =head1 SUBROUTINES/METHODS
 

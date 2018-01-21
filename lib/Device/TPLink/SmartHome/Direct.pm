@@ -1,6 +1,6 @@
 package Device::TPLink::SmartHome::Direct;
 
-use 5.006;
+use 5.008003;
 use Moose;
 use IO::Socket;
 
@@ -43,6 +43,8 @@ Perhaps a little code snippet.
 =head1 SUBROUTINES/METHODS
 
 =head2 passthrough
+
+Recieves an object, formats it as a JSON command and passes it to the device. Returns a response object.
 
 =cut
 
@@ -94,6 +96,8 @@ around [qw(on off getSystemInfo reboot)] => sub {
 
 =head2 encrypt
 
+Encrypts plain text in the manner expected by TP-Link devices.
+
 =cut
 
 sub encrypt {
@@ -109,6 +113,8 @@ sub encrypt {
 }
 
 =head2 decrypt
+
+Decrypts text returned from TP-Link device.
 
 =cut
 

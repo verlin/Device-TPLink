@@ -1,6 +1,6 @@
 package Device::TPLink::Kasa;
 
-use 5.006;
+use 5.008003;
 use Moose;
 use Carp;
 use JSON; # The Kasa API is JSON based
